@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../UltraSonic.srcs/sources_1/new/dabble.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/dabble_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,24 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../UltraSonic.srcs/sources_1/imports/new/clock.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/comp4o1.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/dispCntrl.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/displayTop.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/feedMux.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/servmux.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/servoCount.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/servotop.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/sub.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/subReg.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/trigger.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/uartTop.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/uartc2.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/uartcntrl.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/usControl.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/usTop.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/us_control.vhd" \
+"../../../../UltraSonic.srcs/sources_1/imports/Lab2/x7segb8.vhd" \
+"../../../../UltraSonic.srcs/sim_1/new/Us_tb.vhd" \
+
+# Do not sort compile order
+nosort

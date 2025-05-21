@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../UltraSonic.srcs/sources_1/new/feedMux.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/subReg.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/uartTop.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/uartc2.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/uartcntrl.vhd" \
+"../../../../UltraSonic.srcs/sources_1/new/uarttb.vhd" \
+
+# Do not sort compile order
+nosort
