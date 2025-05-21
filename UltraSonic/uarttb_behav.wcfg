@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="uarttb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="uarttb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="5610000000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="62"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/uarttb/mclk" type="logic">
+      <obj_property name="ElementShortName">mclk</obj_property>
+      <obj_property name="ObjectShortName">mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/jc1" type="logic">
+      <obj_property name="ElementShortName">jc1</obj_property>
+      <obj_property name="ObjectShortName">jc1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/sw" type="array">
+      <obj_property name="ElementShortName">sw[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/btn" type="array">
+      <obj_property name="ElementShortName">btn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/ucntl/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/ucntl/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/ucntl/go" type="logic">
+      <obj_property name="ElementShortName">go</obj_property>
+      <obj_property name="ObjectShortName">go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/ucntl/tdre" type="logic">
+      <obj_property name="ElementShortName">tdre</obj_property>
+      <obj_property name="ObjectShortName">tdre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/ucntl/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/ucntl/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/tdre" type="logic">
+      <obj_property name="ElementShortName">tdre</obj_property>
+      <obj_property name="ObjectShortName">tdre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/txbuff" type="array">
+      <obj_property name="ElementShortName">txbuff[7:0]</obj_property>
+      <obj_property name="ObjectShortName">txbuff[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/baud_count" type="array">
+      <obj_property name="ElementShortName">baud_count[11:0]</obj_property>
+      <obj_property name="ObjectShortName">baud_count[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/bit_count" type="array">
+      <obj_property name="ElementShortName">bit_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/bit_time" type="array">
+      <obj_property name="ElementShortName">bit_time[11:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_time[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/mux/fsel" type="array">
+      <obj_property name="ElementShortName">fsel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">fsel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/mux/q" type="array">
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/mux/output" type="array">
+      <obj_property name="ElementShortName">output[7:0]</obj_property>
+      <obj_property name="ObjectShortName">output[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/mux/close" type="array">
+      <obj_property name="ElementShortName">close[7:0]</obj_property>
+      <obj_property name="ObjectShortName">close[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/mux/near" type="array">
+      <obj_property name="ElementShortName">near[7:0]</obj_property>
+      <obj_property name="ObjectShortName">near[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/mux/far" type="array">
+      <obj_property name="ElementShortName">far[7:0]</obj_property>
+      <obj_property name="ObjectShortName">far[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uarttb/pm/uesp/TxD" type="logic">
+      <obj_property name="ElementShortName">TxD</obj_property>
+      <obj_property name="ObjectShortName">TxD</obj_property>
+   </wvobject>
+</wave_config>
