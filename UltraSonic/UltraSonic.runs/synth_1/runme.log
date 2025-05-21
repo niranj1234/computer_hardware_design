@@ -1,0 +1,989 @@
+
+*** Running vivado
+    with args -log projectTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source projectTop.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source projectTop.tcl -notrace
+Command: synth_design -top projectTop -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21828 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 334.086 ; gain = 100.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'projectTop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usControl.vhd:46]
+INFO: [Synth 8-3491] module 'clkDiv' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/imports/new/clock.vhd:34' bound to instance 'div' of component 'clkDiv' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usControl.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'clkDiv' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/imports/new/clock.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'clkDiv' (1#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/imports/new/clock.vhd:41]
+INFO: [Synth 8-3491] module 'usTop' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:34' bound to instance 'ust' of component 'usTop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usControl.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'usTop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:49]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'trigger' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/trigger.vhd:34' bound to instance 'trig' of component 'trigger' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'trigger' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/trigger.vhd:42]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'trigger' (2#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/trigger.vhd:42]
+INFO: [Synth 8-3491] module 'us_control' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/us_control.vhd:35' bound to instance 'cntrl' of component 'us_control' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'us_control' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/us_control.vhd:55]
+WARNING: [Synth 8-614] signal 'T' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/us_control.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'us_control' (3#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/us_control.vhd:55]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'subreg' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:34' bound to instance 'endReg' of component 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:43]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'subreg' (4#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:43]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'subreg' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:34' bound to instance 'strtReg' of component 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:126]
+INFO: [Synth 8-3491] module 'sub' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/sub.vhd:34' bound to instance 'math' of component 'sub' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'sub' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/sub.vhd:42]
+WARNING: [Synth 8-614] signal 'te' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/sub.vhd:50]
+WARNING: [Synth 8-614] signal 'ts' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/sub.vhd:50]
+WARNING: [Synth 8-614] signal 'SOUND' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/sub.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'sub' (5#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/sub.vhd:42]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'subreg' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:34' bound to instance 'compr' of component 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:130]
+INFO: [Synth 8-3491] module 'comp4to1' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/comp4o1.vhd:34' bound to instance 'comp' of component 'comp4to1' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'comp4to1' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/comp4o1.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'comp4to1' (6#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/comp4o1.vhd:44]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'subreg' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:34' bound to instance 'ldreg' of component 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'usTop' (7#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usTop.vhd:49]
+INFO: [Synth 8-3491] module 'displayTop' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/displayTop.vhd:34' bound to instance 'disp' of component 'displayTop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usControl.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'displayTop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/displayTop.vhd:44]
+INFO: [Synth 8-3491] module 'dispCntrl' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/dispCntrl.vhd:35' bound to instance 'cntrl' of component 'dispCntrl' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/displayTop.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'dispCntrl' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/dispCntrl.vhd:45]
+INFO: [Synth 8-226] default block is never used [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/dispCntrl.vhd:62]
+INFO: [Synth 8-226] default block is never used [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/dispCntrl.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'dispCntrl' (8#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/dispCntrl.vhd:45]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'subreg' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:34' bound to instance 'bcdreg' of component 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/displayTop.vhd:93]
+INFO: [Synth 8-3491] module 'BCDConvert' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/DD.v:23' bound to instance 'bcd' of component 'BCDConvert' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/displayTop.vhd:95]
+INFO: [Synth 8-6157] synthesizing module 'BCDConvert' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/DD.v:23]
+	Parameter IDLE bound to: 3'b000 
+	Parameter SETUP bound to: 3'b001 
+	Parameter ADD bound to: 3'b010 
+	Parameter SHIFT bound to: 3'b011 
+	Parameter DONE bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/DD.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'BCDConvert' (9#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/DD.v:23]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'subreg' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:34' bound to instance 'segreg' of component 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/displayTop.vhd:98]
+INFO: [Synth 8-3491] module 'x7segb8' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/imports/Lab2/x7segb8.vhd:6' bound to instance 'seg' of component 'x7segb8' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/displayTop.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'x7segb8' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/imports/Lab2/x7segb8.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'x7segb8' (10#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/imports/Lab2/x7segb8.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'displayTop' (11#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/displayTop.vhd:44]
+INFO: [Synth 8-3491] module 'servotop' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servotop.vhd:34' bound to instance 'servo' of component 'servotop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usControl.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'servotop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servotop.vhd:43]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'subreg' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:34' bound to instance 'servor' of component 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servotop.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'subreg__parameterized1' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:43]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'subreg__parameterized1' (11#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:43]
+INFO: [Synth 8-3491] module 'servmux' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servmux.vhd:34' bound to instance 'servom' of component 'servmux' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servotop.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'servmux' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servmux.vhd:39]
+WARNING: [Synth 8-614] signal 'close' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servmux.vhd:49]
+WARNING: [Synth 8-614] signal 'near' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servmux.vhd:49]
+WARNING: [Synth 8-614] signal 'far' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servmux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'servmux' (12#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servmux.vhd:39]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'servoCount' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servoCount.vhd:34' bound to instance 'servocnt' of component 'servoCount' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servotop.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'servoCount' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servoCount.vhd:43]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'servoCount' (13#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servoCount.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'servotop' (14#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/servotop.vhd:43]
+INFO: [Synth 8-3491] module 'uartTop' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartTop.vhd:34' bound to instance 'uart' of component 'uartTop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usControl.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'uartTop' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartTop.vhd:43]
+INFO: [Synth 8-3491] module 'uartc2' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartc2.vhd:34' bound to instance 'uesp' of component 'uartc2' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartTop.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'uartc2' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartc2.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'uartc2' (15#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartc2.vhd:46]
+INFO: [Synth 8-3491] module 'uartcntrl' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartcntrl.vhd:34' bound to instance 'ucntl' of component 'uartcntrl' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartTop.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'uartcntrl' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartcntrl.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'uartcntrl' (16#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartcntrl.vhd:42]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'subreg' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:34' bound to instance 'reg' of component 'subreg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartTop.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'subreg__parameterized2' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:43]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'subreg__parameterized2' (16#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/subReg.vhd:43]
+INFO: [Synth 8-3491] module 'feedMux' declared at 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/feedMux.vhd:34' bound to instance 'mux' of component 'feedMux' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartTop.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'feedMux' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/feedMux.vhd:39]
+WARNING: [Synth 8-614] signal 'close' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/feedMux.vhd:48]
+WARNING: [Synth 8-614] signal 'near' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/feedMux.vhd:48]
+WARNING: [Synth 8-614] signal 'far' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/feedMux.vhd:48]
+WARNING: [Synth 8-614] signal 'none' is read in the process but is not in the sensitivity list [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/feedMux.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'feedMux' (17#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/feedMux.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'uartTop' (18#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/uartTop.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'projectTop' (19#1) [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/usControl.vhd:46]
+WARNING: [Synth 8-3331] design servmux has unconnected port ssel[1]
+WARNING: [Synth 8-3331] design servmux has unconnected port ssel[0]
+WARNING: [Synth 8-3331] design projectTop has unconnected port btn[3]
+WARNING: [Synth 8-3331] design projectTop has unconnected port btn[2]
+WARNING: [Synth 8-3331] design projectTop has unconnected port btn[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 389.625 ; gain = 156.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 389.625 ; gain = 156.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 389.625 ; gain = 156.340
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[8]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[9]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[10]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[11]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[12]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[13]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[14]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[15]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16b'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16g'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16r'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17b'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17g'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17r'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd1'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd2'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd4'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd7'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd8'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd9'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd10'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[1]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[1]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[2]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[2]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[3]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[3]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[4]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[4]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[0]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[1]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[2]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[0]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[1]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[2]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[0]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[1]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hsync'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vsync'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_MISO'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_MOSI'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_SCLK'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_CSN'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[1]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[2]'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_SCL'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_SDA'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_INT'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_CT'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIC_CLK'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIC_DATA'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIC_LRSEL'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUD_PWM'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUD_SD'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RxD'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TxD'. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:171]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/projectTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/projectTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 745.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 745.305 ; gain = 512.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 745.305 ; gain = 512.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 745.305 ; gain = 512.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'us_control'
+INFO: [Synth 8-5544] ROM "gouart" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "servload" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gocalc" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "endload" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "strtload" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'BCDConvert'
+INFO: [Synth 8-802] inferred FSM for state register 'add_counter_reg' in module 'BCDConvert'
+INFO: [Synth 8-5544] ROM "sh_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "busy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "result_rdy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "add_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uartc2'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uartcntrl'
+INFO: [Synth 8-5544] ROM "ready" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    done |                           000001 |                              101
+                 trigger |                           000010 |                              000
+                 waiting |                           000100 |                              100
+                    echo |                           001000 |                              001
+                    calc |                           010000 |                              010
+                 compare |                           100000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'us_control'
+WARNING: [Synth 8-327] inferring latch for variable 'mult_reg' [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/sub.vhd:54]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'add_counter_reg' using encoding 'sequential' in module 'BCDConvert'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                   SETUP |                              001 |                              001
+                     ADD |                              010 |                              010
+                   SHIFT |                              011 |                              011
+                    DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'BCDConvert'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    mark |                              000 |                              000
+                   start |                              001 |                              001
+                   delay |                              010 |                              010
+                   shift |                              011 |                              011
+                    stop |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uartc2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    wtgo |                               00 |                               00
+                  wttdre |                               01 |                               01
+                    load |                               10 |                               10
+                   wtngo |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uartcntrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 745.305 ; gain = 512.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 4     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 2     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module trigger 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+Module us_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+Module subreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+Module dispCntrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module BCDConvert 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 9     
+Module x7segb8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subreg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module servoCount 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module servotop 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module uartc2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 5     
+Module uartcntrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module subreg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module feedMux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP ust/math/multOp, operation Mode is: (0 or (C:0xffff))+(A*(B:0x11) or 0).
+DSP Report: operator ust/math/multOp is absorbed into DSP ust/math/multOp.
+WARNING: [Synth 8-3331] design projectTop has unconnected port btn[3]
+WARNING: [Synth 8-3331] design projectTop has unconnected port btn[2]
+WARNING: [Synth 8-3331] design projectTop has unconnected port btn[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart/uesp/txbuff_reg[7] )
+INFO: [Synth 8-3886] merging instance 'ust/endReg/q_reg[13]' (FDCE) to 'ust/endReg/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ust/strtReg/q_reg[13]' (FDCE) to 'ust/strtReg/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ust/endReg/q_reg[14]' (FDCE) to 'ust/endReg/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ust/strtReg/q_reg[14]' (FDCE) to 'ust/strtReg/q_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ust/endReg/q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ust/strtReg/q_reg[15] )
+INFO: [Synth 8-3886] merging instance 'uart/reg/q_reg[0]' (FDCE) to 'servo/servor/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uart/reg/q_reg[2]' (FDCE) to 'ust/ldreg/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uart/reg/q_reg[1]' (FDCE) to 'servo/servor/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'servo/servor/q_reg[0]' (FDCE) to 'ust/ldreg/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'servo/servor/q_reg[1]' (FDCE) to 'ust/ldreg/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[0]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[8]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[9]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[10]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[11]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[12]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[13]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[14]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[15]' (FDCE) to 'ust/ldreg/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[4]' (FDCE) to 'ust/ldreg/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[5]' (FDCE) to 'ust/ldreg/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ust/ldreg/q_reg[6]' (FDCE) to 'ust/ldreg/q_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ust/ldreg/q_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[31]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[30]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[29]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[28]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[27]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[26]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[25]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[24]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[23]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[22]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[21]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[20]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[19]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[18]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[17]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/math/mult_reg[16]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/endReg/q_reg[15]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/strtReg/q_reg[15]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (ust/ldreg/q_reg[7]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (disp/segreg/q_reg[3]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (disp/segreg/q_reg[2]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (disp/segreg/q_reg[1]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (disp/segreg/q_reg[0]) is unused and will be removed from module projectTop.
+WARNING: [Synth 8-3332] Sequential element (uart/uesp/txbuff_reg[7]) is unused and will be removed from module projectTop.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 745.305 ; gain = 512.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sub         | (0 or (C:0xffff))+(A*(B:0x11) or 0) | 16     | 5      | 21     | -      | 21     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 778.383 ; gain = 545.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 806.488 ; gain = 573.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 815.547 ; gain = 582.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.srcs/sources_1/new/sub.vhd:54]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.547 ; gain = 582.262
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.547 ; gain = 582.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.547 ; gain = 582.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.547 ; gain = 582.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.547 ; gain = 582.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.547 ; gain = 582.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    57|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |    14|
+|5     |LUT2    |    96|
+|6     |LUT3    |    21|
+|7     |LUT4    |    64|
+|8     |LUT5    |    56|
+|9     |LUT6    |    63|
+|10    |FDCE    |   172|
+|11    |FDPE    |     4|
+|12    |FDRE    |    46|
+|13    |FDSE    |     1|
+|14    |LD      |    16|
+|15    |IBUF    |     3|
+|16    |OBUF    |    26|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------+-----------+------+
+|      |Instance     |Module     |Cells |
++------+-------------+-----------+------+
+|1     |top          |           |   642|
+|2     |  disp       |displayTop |   244|
+|3     |    bcd      |BCDConvert |   168|
+|4     |    bcdreg   |subreg_3   |    16|
+|5     |    cntrl    |dispCntrl  |     3|
+|6     |    seg      |x7segb8    |    29|
+|7     |    segreg   |subreg_4   |    28|
+|8     |  div        |clkDiv     |    14|
+|9     |  servo      |servotop   |    43|
+|10    |    servocnt |servoCount |    43|
+|11    |  uart       |uartTop    |    68|
+|12    |    ucntl    |uartcntrl  |     6|
+|13    |    uesp     |uartc2     |    62|
+|14    |  ust        |usTop      |   242|
+|15    |    cntrl    |us_control |    11|
+|16    |    comp     |comp4to1   |     8|
+|17    |    compr    |subreg     |    51|
+|18    |    endReg   |subreg_0   |    34|
+|19    |    ldreg    |subreg_1   |     6|
+|20    |    math     |sub        |    24|
+|21    |    strtReg  |subreg_2   |    13|
+|22    |    trig     |trigger    |    95|
++------+-------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.547 ; gain = 582.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 815.547 ; gain = 226.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 815.547 ; gain = 582.262
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+139 Infos, 145 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 815.547 ; gain = 594.859
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/LUSIDVIP/UltraSonic/UltraSonic.runs/synth_1/projectTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file projectTop_utilization_synth.rpt -pb projectTop_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 815.547 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 11 13:24:51 2022...
