@@ -1,0 +1,22 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/MastersProgram/ECE5710Hardware/ECE5710/LUSIDVIP/UltraSonic/UltraSonic.sim/sim_1/synth/func/xsim/us_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BCDConvert
+INFO: [VRFC 10-307] analyzing entity clkDiv
+INFO: [VRFC 10-307] analyzing entity comp4to1
+INFO: [VRFC 10-307] analyzing entity dispCntrl
+INFO: [VRFC 10-307] analyzing entity servoCount
+INFO: [VRFC 10-307] analyzing entity sub
+INFO: [VRFC 10-307] analyzing entity subreg
+INFO: [VRFC 10-307] analyzing entity subreg_0
+INFO: [VRFC 10-307] analyzing entity subreg_1
+INFO: [VRFC 10-307] analyzing entity subreg_2
+INFO: [VRFC 10-307] analyzing entity subreg_3
+INFO: [VRFC 10-307] analyzing entity subreg_4
+INFO: [VRFC 10-307] analyzing entity trigger
+INFO: [VRFC 10-307] analyzing entity us_control
+INFO: [VRFC 10-307] analyzing entity x7segb8
+INFO: [VRFC 10-307] analyzing entity displayTop
+INFO: [VRFC 10-307] analyzing entity servotop
+INFO: [VRFC 10-307] analyzing entity usTop
+INFO: [VRFC 10-307] analyzing entity projectTop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/MastersProgram/ECE5710Hardware/ECE5710/LUSIDVIP/UltraSonic/UltraSonic.srcs/sim_1/new/Us_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity us_tb
