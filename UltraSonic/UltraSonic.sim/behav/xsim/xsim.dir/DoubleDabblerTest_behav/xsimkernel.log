@@ -1,0 +1,7 @@
+Running: xsim.dir/DoubleDabblerTest_behav/xsimk.exe -simmode gui -wdb DoubleDabblerTest_behav.wdb -simrunnum 0 -socket 60022
+Design successfully loaded
+Design Loading Memory Usage: 6732 KB (Peak: 6732 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7292 KB (Peak: 7292 KB)
+Simulation CPU Usage: 46 ms
